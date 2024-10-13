@@ -1,53 +1,43 @@
-Here’s a complete `README.md` file for your project:
-
-```markdown
 # Video Downloader for YouTube, Instagram, and Twitter
 
-This project allows users to download videos from YouTube, Instagram, and Twitter (now X) using the `yt-dlp` library. The script automatically fetches the highest quality video available for the provided link and downloads it to the current directory.
+This project provides a simple command-line tool for downloading videos from YouTube, Instagram, and Twitter (now X). The program automatically detects the platform from the given link and downloads the video in the highest available resolution using the `yt-dlp` library.
 
 ## Features
 
-- Download videos from YouTube, Instagram, and Twitter (X).
-- Automatically selects and downloads the highest available resolution.
-- Simple and user-friendly command-line interface.
-- Cross-platform support for popular social media platforms.
+- **YouTube Video Download:** Fetches the highest resolution video from YouTube.
+- **Instagram Video Download:** Supports downloading videos from Instagram.
+- **Twitter (X) Video Download:** Downloads videos from Twitter (X).
+- **Automatic Platform Detection:** Based on the provided link, the script automatically detects the platform and downloads the video.
+- **Easy to Use:** Works seamlessly in a Google Colab environment for hassle-free video downloads.
 
 ## Installation
 
-### 1. Clone the repository
+To get started, you can use the following instructions to set up the environment and run the tool.
 
-To get started, clone the repository to your local machine using Git:
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ydeepanshutomar/VideoDownloader.git
-cd video-downloader
+git clone https://github.com/your-username/video-downloader-tool.git
+cd video-downloader-tool
 ```
 
-### 2. Install dependencies
+### 2. Install Dependencies
 
-You can install the required libraries by running:
-
-```bash
-pip install -r requirements.txt
-```
-
-Alternatively, you can use the script in a Jupyter Notebook or Google Colab environment by installing the necessary dependencies directly in the notebook.
-
-### 3. Run the Script
-
-Execute the script and enter the video URL when prompted:
+You need to install `yt-dlp`, a powerful library that handles video downloading. Run the following command to install it:
 
 ```bash
-python download_video.py
+pip install yt-dlp
 ```
 
 ## Usage
 
-1. Run the script as described above.
-2. The script will ask you to input a video URL from YouTube, Instagram, or Twitter (X).
-3. The video will automatically download in the best available quality to the current directory.
+The script can be executed either in a local Python environment or in Google Colab. Follow the steps below to use it.
 
-Example:
+1. **Run the script** by executing the Python code.
+2. **Input the video URL** from YouTube, Instagram, or Twitter (X) when prompted.
+3. The tool will detect the platform and download the video in the highest available quality.
+
+### Example:
 
 ```bash
 Enter the video link: https://www.youtube.com/watch?v=example
@@ -55,47 +45,61 @@ Downloading highest resolution video from YouTube...
 Download complete.
 ```
 
+### Code Sample:
+
+```python
+# Input the video URL
+video_url = input("Enter the video link: ")
+detect_and_download(video_url)
+```
+
+### Google Colab Setup:
+
+To use the tool in Google Colab:
+
+1. Install the `yt-dlp` library:
+
+```bash
+!pip install yt-dlp
+```
+
+2. Run the provided Python script in Colab to download the video.
+
+## Project Structure
+
+```
+video-downloader-tool/
+├── README.md             # Project documentation
+├── download_video.py     # Python script for downloading videos
+└── requirements.txt      # Python dependencies
+```
+
 ## Requirements
 
 - Python 3.7 or higher
-- Internet connection
+- `yt-dlp` library for downloading videos
 
-The required Python libraries are specified in `requirements.txt`. These can be installed by running:
+### Install Dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install yt-dlp
 ```
-
-## Supported Platforms
-
-- YouTube
-- Instagram
-- Twitter (X)
-
-## File Structure
-
-```
-video-downloader/
-├── download_video.py     # Main script for downloading videos
-├── README.md             # Project documentation
-├── requirements.txt      # Python dependencies
-└── LICENSE               # License file (optional)
-```
-
-## Contribution
-
-Feel free to submit issues or pull requests if you'd like to contribute to the project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgements
+
+- **yt-dlp** for providing a powerful and flexible video downloading solution.
 ```
 
 ### Explanation:
-- **Installation**: Instructions on how to clone the repository and install dependencies.
-- **Usage**: Simple explanation of how to run the script and an example.
-- **Supported Platforms**: Lists the platforms from which videos can be downloaded.
-- **Requirements**: Python version and libraries needed.
-- **Contribution**: Section encouraging contributions.
-- **License**: Placeholder for any license file you may want to include.
 
+- **Overview**: Provides a general description of the project.
+- **Installation**: Steps to install `yt-dlp` and set up the environment.
+- **Usage**: Describes how to run the script and download videos.
+- **Google Colab Setup**: Provides guidance on running the tool in Colab.
+- **Acknowledgements**: Credits the libraries used in the project.
+
+Let me know if you need to add or modify anything further!

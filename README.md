@@ -19,7 +19,7 @@ This project allows users to download videos from YouTube, Instagram, and Twitte
 To get started, clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/video-downloader.git
+git clone https://github.com/ydeepanshutomar/VideoDownloader.git
 cd video-downloader
 ```
 
